@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		330A9D40E922D252B0270945 /* Pods_splyza_ios_teams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10A1F2E4CC8BBE4D9BD6BED /* Pods_splyza_ios_teams.framework */; };
+		F45D6CB928C5A67400D7AE9C /* InvitePermissionDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45D6CB828C5A67400D7AE9C /* InvitePermissionDialog.swift */; };
+		F45D6CBC28C5BBE500D7AE9C /* PermissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45D6CBB28C5BBE500D7AE9C /* PermissionTableViewCell.swift */; };
 		F471D28928C4563000972843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471D28828C4563000972843 /* AppDelegate.swift */; };
 		F471D28B28C4563000972843 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471D28A28C4563000972843 /* SceneDelegate.swift */; };
 		F471D29028C4563000972843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F471D28E28C4563000972843 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		5806B3D8001B2484B8EA4BB2 /* Pods-splyza-ios-teams.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-splyza-ios-teams.release.xcconfig"; path = "Target Support Files/Pods-splyza-ios-teams/Pods-splyza-ios-teams.release.xcconfig"; sourceTree = "<group>"; };
 		E10A1F2E4CC8BBE4D9BD6BED /* Pods_splyza_ios_teams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_splyza_ios_teams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A28B3CA65CBEA5CD3A52FD /* Pods-splyza-ios-teams.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-splyza-ios-teams.debug.xcconfig"; path = "Target Support Files/Pods-splyza-ios-teams/Pods-splyza-ios-teams.debug.xcconfig"; sourceTree = "<group>"; };
+		F45D6CB828C5A67400D7AE9C /* InvitePermissionDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitePermissionDialog.swift; sourceTree = "<group>"; };
+		F45D6CBB28C5BBE500D7AE9C /* PermissionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionTableViewCell.swift; sourceTree = "<group>"; };
 		F471D28528C4563000972843 /* splyza-ios-teams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "splyza-ios-teams.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F471D28828C4563000972843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F471D28A28C4563000972843 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,14 @@
 				E10A1F2E4CC8BBE4D9BD6BED /* Pods_splyza_ios_teams.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F45D6CBA28C5BBC300D7AE9C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				F45D6CBB28C5BBE500D7AE9C /* PermissionTableViewCell.swift */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		F471D27C28C4563000972843 = {
@@ -142,6 +154,7 @@
 		F4D3767228C457890025E68A /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F45D6CBA28C5BBC300D7AE9C /* cell */,
 				F4D3768B28C463EE0025E68A /* view_model */,
 				F4D3768328C45EDA0025E68A /* view_controller */,
 				F4D3767A28C459C60025E68A /* storyboard */,
@@ -189,6 +202,7 @@
 			children = (
 				F4D3768628C45FE90025E68A /* TeamsViewController.swift */,
 				F4D3768428C45F1E0025E68A /* HomeViewController.swift */,
+				F45D6CB828C5A67400D7AE9C /* InvitePermissionDialog.swift */,
 			);
 			path = view_controller;
 			sourceTree = "<group>";
@@ -322,7 +336,9 @@
 				F4D3768728C45FE90025E68A /* TeamsViewController.swift in Sources */,
 				F4D3767C28C45BB10025E68A /* PermissionDto.swift in Sources */,
 				F4D3768D28C463FC0025E68A /* TeamsViewModel.swift in Sources */,
+				F45D6CBC28C5BBE500D7AE9C /* PermissionTableViewCell.swift in Sources */,
 				F4D3768F28C465210025E68A /* ErrorRepository.swift in Sources */,
+				F45D6CB928C5A67400D7AE9C /* InvitePermissionDialog.swift in Sources */,
 				F4D3768528C45F1E0025E68A /* HomeViewController.swift in Sources */,
 				F4D3768928C463400025E68A /* InvitesModel.swift in Sources */,
 				F4D3767928C4598C0025E68A /* TeamsDto.swift in Sources */,
