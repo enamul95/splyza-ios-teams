@@ -10,5 +10,5 @@ import Foundation
 
 protocol InviteMemberRepository: AnyObject {
     
-    func inviteMember(permission:PermissionDto)
+    func inviteMemberResponse(permission:PermissionDto)
 }

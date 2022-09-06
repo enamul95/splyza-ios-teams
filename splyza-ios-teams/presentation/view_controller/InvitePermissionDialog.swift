@@ -9,19 +9,22 @@ import UIKit
 
 class InvitePermissionDialog: UIViewController,UITableViewDelegate,UITableViewDataSource {
   
+    var teams: TeamsDto? = nil
     
+    weak var roleSelectRepositoryDelegate: RoleSelectRepository?
 
-    
-    var arrPersimsion = [
-        ["code":"manager" as AnyObject, "des":"Coach" as AnyObject],
-        ["code":"editor" as AnyObject, "des":"Player Coach" as AnyObject],
-        ["code":"member" as AnyObject, "des":"Player" as AnyObject],
-        ["code":"readonly" as AnyObject, "des":"Supporter" as AnyObject]
-      
-    ]
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet var uvBackground: UIView!
+    
+    
+    var arrPersimsion = [
+        ["role":"manager" as AnyObject, "des":"Coach" as AnyObject],
+        ["role":"editor" as AnyObject, "des":"Player Coach" as AnyObject],
+        ["role":"member" as AnyObject, "des":"Player" as AnyObject],
+        ["role":"readonly" as AnyObject, "des":"Supporter" as AnyObject]
+      
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,13 +50,35 @@ class InvitePermissionDialog: UIViewController,UITableViewDelegate,UITableViewDa
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! PermissionTableViewCell;
-        cell.permissionLabel.text = arrPersimsion[indexPath.row]["des"] as? String
-     
-        cell.backgroundColor = .clear
-
+        
+        if(teams?.plan.supporterLimit == 0 && arrPersimsion[indexPath.row]["role"] as! String == "readonly"){
+            cell.isHidden = true
+        }else{
+            
+            var currentMember = teams!.members.administrators + teams!.members.managers + teams!.members.editors + teams!.members.members
+            
+            if( currentMember >= (teams?.plan.memberLimit)! &&  arrPersimsion[indexPath.row]["role"] as! String != "readonly"){
+                
+                cell.selectionStyle = .none
+            }else{
+                cell.selectionStyle = .default
+            }
+            cell.permissionLabel.text = arrPersimsion[indexPath.row]["des"] as? String
+         
+            cell.backgroundColor = .clear
+        }
+       
+       
         return cell;
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let role = arrPersimsion[indexPath.row]["role"] as? String
+        self.roleSelectRepositoryDelegate?.roleselectedItem(role: role!)
+        removeAnimate()
     }
     
     

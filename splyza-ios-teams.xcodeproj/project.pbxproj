@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		330A9D40E922D252B0270945 /* Pods_splyza_ios_teams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10A1F2E4CC8BBE4D9BD6BED /* Pods_splyza_ios_teams.framework */; };
+		F42F9C1B28C70B5000284C7F /* RoleSelectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F9C1A28C70B5000284C7F /* RoleSelectRepository.swift */; };
+		F42F9C1D28C70CE200284C7F /* InviteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F9C1C28C70CE100284C7F /* InviteViewModel.swift */; };
+		F42F9C1F28C7358600284C7F /* ShareQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F9C1E28C7358600284C7F /* ShareQRViewController.swift */; };
+		F42F9C2128C738DF00284C7F /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F9C2028C738DF00284C7F /* SweetAlert.swift */; };
+		F42F9C2328C7392400284C7F /* CheckNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F9C2228C7392400284C7F /* CheckNetwork.swift */; };
+		F42F9C2528C7395C00284C7F /* CustomSweetalert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F9C2428C7395C00284C7F /* CustomSweetalert.swift */; };
 		F45D6CB928C5A67400D7AE9C /* InvitePermissionDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45D6CB828C5A67400D7AE9C /* InvitePermissionDialog.swift */; };
 		F45D6CBC28C5BBE500D7AE9C /* PermissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45D6CBB28C5BBE500D7AE9C /* PermissionTableViewCell.swift */; };
 		F471D28928C4563000972843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471D28828C4563000972843 /* AppDelegate.swift */; };
@@ -32,6 +38,12 @@
 		5806B3D8001B2484B8EA4BB2 /* Pods-splyza-ios-teams.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-splyza-ios-teams.release.xcconfig"; path = "Target Support Files/Pods-splyza-ios-teams/Pods-splyza-ios-teams.release.xcconfig"; sourceTree = "<group>"; };
 		E10A1F2E4CC8BBE4D9BD6BED /* Pods_splyza_ios_teams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_splyza_ios_teams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A28B3CA65CBEA5CD3A52FD /* Pods-splyza-ios-teams.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-splyza-ios-teams.debug.xcconfig"; path = "Target Support Files/Pods-splyza-ios-teams/Pods-splyza-ios-teams.debug.xcconfig"; sourceTree = "<group>"; };
+		F42F9C1A28C70B5000284C7F /* RoleSelectRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectRepository.swift; sourceTree = "<group>"; };
+		F42F9C1C28C70CE100284C7F /* InviteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteViewModel.swift; sourceTree = "<group>"; };
+		F42F9C1E28C7358600284C7F /* ShareQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareQRViewController.swift; sourceTree = "<group>"; };
+		F42F9C2028C738DF00284C7F /* SweetAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
+		F42F9C2228C7392400284C7F /* CheckNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckNetwork.swift; sourceTree = "<group>"; };
+		F42F9C2428C7395C00284C7F /* CustomSweetalert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSweetalert.swift; sourceTree = "<group>"; };
 		F45D6CB828C5A67400D7AE9C /* InvitePermissionDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitePermissionDialog.swift; sourceTree = "<group>"; };
 		F45D6CBB28C5BBE500D7AE9C /* PermissionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionTableViewCell.swift; sourceTree = "<group>"; };
 		F471D28528C4563000972843 /* splyza-ios-teams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "splyza-ios-teams.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +142,9 @@
 			children = (
 				F4D3767328C457F80025E68A /* IpConfig.swift */,
 				F4D3767528C458C40025E68A /* Constrants.swift */,
+				F42F9C2028C738DF00284C7F /* SweetAlert.swift */,
+				F42F9C2228C7392400284C7F /* CheckNetwork.swift */,
+				F42F9C2428C7395C00284C7F /* CustomSweetalert.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -193,6 +208,7 @@
 				F4D3767F28C45C110025E68A /* TeamsRepository.swift */,
 				F4D3768128C45D860025E68A /* InviteMemberRepository.swift */,
 				F4D3768E28C465210025E68A /* ErrorRepository.swift */,
+				F42F9C1A28C70B5000284C7F /* RoleSelectRepository.swift */,
 			);
 			path = repository;
 			sourceTree = "<group>";
@@ -203,6 +219,7 @@
 				F4D3768628C45FE90025E68A /* TeamsViewController.swift */,
 				F4D3768428C45F1E0025E68A /* HomeViewController.swift */,
 				F45D6CB828C5A67400D7AE9C /* InvitePermissionDialog.swift */,
+				F42F9C1E28C7358600284C7F /* ShareQRViewController.swift */,
 			);
 			path = view_controller;
 			sourceTree = "<group>";
@@ -211,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				F4D3768C28C463FC0025E68A /* TeamsViewModel.swift */,
+				F42F9C1C28C70CE100284C7F /* InviteViewModel.swift */,
 			);
 			path = view_model;
 			sourceTree = "<group>";
@@ -331,12 +349,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4D3767428C457F80025E68A /* IpConfig.swift in Sources */,
+				F42F9C1F28C7358600284C7F /* ShareQRViewController.swift in Sources */,
 				F4D3768228C45D860025E68A /* InviteMemberRepository.swift in Sources */,
+				F42F9C1D28C70CE200284C7F /* InviteViewModel.swift in Sources */,
 				F4D3768028C45C110025E68A /* TeamsRepository.swift in Sources */,
+				F42F9C2328C7392400284C7F /* CheckNetwork.swift in Sources */,
 				F4D3768728C45FE90025E68A /* TeamsViewController.swift in Sources */,
 				F4D3767C28C45BB10025E68A /* PermissionDto.swift in Sources */,
 				F4D3768D28C463FC0025E68A /* TeamsViewModel.swift in Sources */,
 				F45D6CBC28C5BBE500D7AE9C /* PermissionTableViewCell.swift in Sources */,
+				F42F9C1B28C70B5000284C7F /* RoleSelectRepository.swift in Sources */,
+				F42F9C2528C7395C00284C7F /* CustomSweetalert.swift in Sources */,
 				F4D3768F28C465210025E68A /* ErrorRepository.swift in Sources */,
 				F45D6CB928C5A67400D7AE9C /* InvitePermissionDialog.swift in Sources */,
 				F4D3768528C45F1E0025E68A /* HomeViewController.swift in Sources */,
@@ -344,6 +367,7 @@
 				F4D3767928C4598C0025E68A /* TeamsDto.swift in Sources */,
 				F471D28928C4563000972843 /* AppDelegate.swift in Sources */,
 				F4D3767628C458C40025E68A /* Constrants.swift in Sources */,
+				F42F9C2128C738DF00284C7F /* SweetAlert.swift in Sources */,
 				F471D28B28C4563000972843 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
