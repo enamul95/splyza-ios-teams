@@ -29,7 +29,6 @@
 		F4D3768228C45D860025E68A /* InviteMemberRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3768128C45D860025E68A /* InviteMemberRepository.swift */; };
 		F4D3768528C45F1E0025E68A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3768428C45F1E0025E68A /* HomeViewController.swift */; };
 		F4D3768728C45FE90025E68A /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3768628C45FE90025E68A /* TeamsViewController.swift */; };
-		F4D3768928C463400025E68A /* InvitesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3768828C463400025E68A /* InvitesModel.swift */; };
 		F4D3768D28C463FC0025E68A /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3768C28C463FC0025E68A /* TeamsViewModel.swift */; };
 		F4D3768F28C465210025E68A /* ErrorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3768E28C465210025E68A /* ErrorRepository.swift */; };
 /* End PBXBuildFile section */
@@ -61,7 +60,6 @@
 		F4D3768128C45D860025E68A /* InviteMemberRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteMemberRepository.swift; sourceTree = "<group>"; };
 		F4D3768428C45F1E0025E68A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4D3768628C45FE90025E68A /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
-		F4D3768828C463400025E68A /* InvitesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitesModel.swift; sourceTree = "<group>"; };
 		F4D3768C28C463FC0025E68A /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
 		F4D3768E28C465210025E68A /* ErrorRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,7 +195,6 @@
 		F4D3767D28C45BE60025E68A /* model */ = {
 			isa = PBXGroup;
 			children = (
-				F4D3768828C463400025E68A /* InvitesModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -363,7 +360,6 @@
 				F4D3768F28C465210025E68A /* ErrorRepository.swift in Sources */,
 				F45D6CB928C5A67400D7AE9C /* InvitePermissionDialog.swift in Sources */,
 				F4D3768528C45F1E0025E68A /* HomeViewController.swift in Sources */,
-				F4D3768928C463400025E68A /* InvitesModel.swift in Sources */,
 				F4D3767928C4598C0025E68A /* TeamsDto.swift in Sources */,
 				F471D28928C4563000972843 /* AppDelegate.swift in Sources */,
 				F4D3767628C458C40025E68A /* Constrants.swift in Sources */,
