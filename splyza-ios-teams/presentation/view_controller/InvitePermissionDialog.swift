@@ -52,22 +52,32 @@ class InvitePermissionDialog: UIViewController,UITableViewDelegate,UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! PermissionTableViewCell;
         
+        
+        
         if(teams?.plan.supporterLimit == 0 && arrPersimsion[indexPath.row]["role"] as! String == "readonly"){
             cell.isHidden = true
         }else{
             
             var currentMember = teams!.members.administrators + teams!.members.managers + teams!.members.editors + teams!.members.members
-            
+
             if( currentMember >= (teams?.plan.memberLimit)! &&  arrPersimsion[indexPath.row]["role"] as! String != "readonly"){
-                
-                cell.selectionStyle = .none
+                cell.isUserInteractionEnabled = false
+               
             }else{
                 cell.selectionStyle = .default
             }
+            
+            if((teams?.plan.supporterLimit)! <= (teams?.members.supporters)! && arrPersimsion[indexPath.row]["role"] as! String == "readonly"){
+
+               cell.isUserInteractionEnabled = false
+           }
+            
             cell.permissionLabel.text = arrPersimsion[indexPath.row]["des"] as? String
          
             cell.backgroundColor = .clear
         }
+        
+       
        
        
         return cell;
