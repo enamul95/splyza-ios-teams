@@ -21,3 +21,7 @@
 
 #Connection
  - Run splyza-team  (provided spring boot service) service & Go to splyza-ios-teams-> common-> put your IP to BASE_URL  
+
+# Share screenshots
+ - Please check some screenshots splyza-ios-teams folder from the like https://drive.google.com/drive/folders/1lVmlVvsNRpC4Ph3lPk8LnMV04_V8y6KZ?usp=sharing
+
