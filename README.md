@@ -20,4 +20,4 @@
 - common - contain the provided functions, custom class like(network,alert,Ip config) etc.
 
 #Connection
- - If the connection to splyza - team (provided spring boot service). Please Go to splyza-ios-teams-> common-> put your IP to BASE_URL 
+ - Run splyza-team  (provided spring boot service) service & Go to splyza-ios-teams-> common-> put your IP to BASE_URL  
